@@ -15,7 +15,6 @@ Plugin 'jlanzarotta/bufexplorer'
 Plugin 'L9'
 Plugin 'FuzzyFinder'
 Plugin 'bling/vim-airline'
-Plugin 'ShowMarks'
 Plugin 'moll/vim-bbye'
 Plugin 'tpope/vim-fugitive'
 
@@ -39,7 +38,6 @@ set expandtab
 set smartindent 
 
 " change paste
-"nmap <silent> cp "_cw<C-R>"<Esc>
 nmap <silent> cp "_ce<C-R>"<Esc>
 
 " select block with %
@@ -114,11 +112,11 @@ nnoremap <M-right> :vertical resize -5<cr>
 " showmarks
 " let g:showmarks_textlower = "---"
 " let g:showmarks_hlline_lower = 1 
-highlight ShowMarksHLl guifg=red guibg=green
-highlight ShowMarksHLu guifg=red guibg=blue
-"let g:showmarks_include="bcdefzxABJio"
-"let b:showmarks_include="abcdefzxABJio"
-let showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789."
+" highlight ShowMarksHLl guifg=red guibg=green
+" highlight ShowMarksHLu guifg=red guibg=blue
+" let g:showmarks_include="bcdefzxABJio"
+" let b:showmarks_include="abcdefzxABJio"
+" let showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789."
 
 " VCS
 "let VCSCommandSVNDiffExt="kompare -o -"
@@ -126,6 +124,7 @@ let showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234
 " vim-bbye
 nnoremap <leader>q :Bdelete<CR>
 
+" gvim
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
 :set guioptions-=r  "remove right-hand scroll bar
