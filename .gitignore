@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!.config/i3/config
+!.config/i3status/config
+!.config/i3status/i3_script.sh
+!.vimrc
+!README.md
+# etc...
+
+# ...even if they are in subdirectories
+#!*/
