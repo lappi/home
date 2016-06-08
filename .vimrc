@@ -17,6 +17,7 @@ Plugin 'FuzzyFinder'
 Plugin 'bling/vim-airline'
 Plugin 'moll/vim-bbye'
 Plugin 'tpope/vim-fugitive'
+Plugin 'rking/ag.vim'
 
 filetype plugin indent on     " required! 
 
@@ -65,7 +66,7 @@ let g:cpp_experimental_template_highlight = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'molokai'
+"let g:airline_theme = 'molokai'
 
 " NERDTree
 " au VimEnter *  NERDTree
@@ -90,7 +91,7 @@ let g:EclimCValidate = 0
 
 " FuzzyFinder
 "nnoremap <leader>f :FufFile **/<cr>
-nnoremap <leader>f :FufFile **/loewe/common<cr>
+"nnoremap <leader>f :FufFile **/loewe/common<cr>
 nnoremap <leader>b :FufBuffer<cr>
 nnoremap <leader>t :FufTag<cr>
 
@@ -129,3 +130,12 @@ nnoremap <leader>q :Bdelete<CR>
 :set guioptions-=T  "remove toolbar
 :set guioptions-=r  "remove right-hand scroll bar
 :set guioptions-=L  "remove left-hand scroll bar
+
+" folding
+autocmd Syntax c,cpp,vim,xml,html,xhtml setlocal foldmethod=syntax
+autocmd Syntax c,cpp,vim,xml,html,xhtml,perl normal zR
+set foldmethod=syntax
+"set foldlevelstart=1
+
+" ag-vim
+nmap <silent> <leader>f :Ag "<cword>" <CR>
