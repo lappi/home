@@ -1,8 +1,13 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-" vundle
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
@@ -19,6 +24,7 @@ Plugin 'moll/vim-bbye'
 Plugin 'tpope/vim-fugitive'
 Plugin 'rking/ag.vim'
 
+call vundle#end()             " required
 filetype plugin indent on     " required! 
 
 " general settings
