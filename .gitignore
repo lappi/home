@@ -3,6 +3,7 @@
 
 # But not these files...
 !.gitignore
+!.gitconfig
 !.config/i3/config
 !.config/i3status/config
 !.config/i3status/i3_script.sh

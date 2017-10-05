@@ -1,0 +1,15 @@
+[user]
+	email = otrenkin@quantenna.com
+	name = Oleg Trenkin
+[merge]
+	tool = vimdiff
+[core]
+	autocrlf = false
+[alias]
+	dc = diff --cached
+	df = "!f() { git diff "$1"^.."$1"; }; f"
+	su = status -uno
+	rh = reset HEAD
+	lg = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s"
+	st = stash show --color
+	ls = show --pretty="" --name-only
